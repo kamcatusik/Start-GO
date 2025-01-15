@@ -1,0 +1,15 @@
+package main 
+import "fmt"
+func main () {
+    var a int
+    fmt.Scan(&a)
+    stepen:=1
+    k:=0
+    for stepen<a {
+        stepen=stepen*2
+        k++ 
+    }
+    fmt.Print(k)
+}
+
+    
