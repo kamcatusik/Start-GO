@@ -1,0 +1,20 @@
+package main 
+import "fmt"
+func main() {
+    var a int
+    count:=0
+    fmt.Scan(&a)
+   
+    for a%3==0  {
+        a=a/3 
+            count++      
+        }
+    
+    fmt.Print(count)
+}
+            
+        
+
+
+
+
