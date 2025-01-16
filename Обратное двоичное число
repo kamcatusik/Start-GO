@@ -1,0 +1,13 @@
+package main
+
+import "fmt"
+
+func main() {
+	var a int = 15
+	// fmt.Scan(&a)
+	//i := a
+	for a > 0 {
+		fmt.Println(a % 2)
+		a = a / 2
+	}
+}
