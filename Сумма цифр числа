@@ -1,0 +1,12 @@
+package main 
+import "fmt"
+func main () {
+    var a int
+    fmt.Scan(&a)
+    sum:=0
+    i:=a
+    for i!=0 {
+        last:= i%10
+        sum=last+sum
+        i=i/10
+    } 
