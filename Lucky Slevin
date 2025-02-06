@@ -1,0 +1,36 @@
+package main
+
+import (
+	"fmt"
+	"math/rand"
+	"time"
+)
+
+func main() {
+	seconds := time.Now().Unix()
+	rand.Seed(seconds)
+	target := rand.Intn(100) + 1
+	var gamer int
+	var succes = false
+	fmt.Println("Введите задуманное число")
+	for i := 0; i < 10; i++ {
+		fmt.Println("Осталось попыток:", 10-i)
+		fmt.Scan(&gamer)
+		if gamer > target {
+			fmt.Println("УПС, ваше число БОЛЬШЕ")
+		} else if gamer < target {
+
+			fmt.Println("УПС,ваше число МЕНЬШЕ")
+		} else if gamer == target {
+			succes = true
+			fmt.Println("Поздравляю вы угадали")
+			break
+		}
+
+	}
+	if !succes {
+		fmt.Println("Вы не угадали мое число. Это было :", target)
+
+	}
+
+}
