@@ -1,0 +1,24 @@
+package main
+
+import "fmt"
+
+func main() {
+	var n int
+	fmt.Scan(&n)
+	a := 0
+	b := 1
+	count := 1
+	for {
+
+		if b == n {
+			fmt.Print(count)
+			return
+		}
+		if a > n {
+			fmt.Print(-1)
+			return
+		}
+		a, b = b, a+b
+		count++
+	}
+}
